@@ -4,26 +4,7 @@ import pandas as pd
 from sqlalchemy import create_engine, MetaData, Table, Column, Integer, String
 
 ## DB 연결 Local
-def db_create():
-    # 로컬
-    engine = create_engine("postgresql://postgres:1234@localhost:5432/chatbot", echo = False)
-    
-    # Heroku
-    engine = create_engine("postgresql://fednehfmarnquy:9de42f09c90aa11fd93a3cd4a1303c58998e421c913de3d6e5f08cfa7c89d1b5@ec2-54-225-234-165.compute-1.amazonaws.com:5432/dcpdo186cscu8t", echo = False)
 
-    engine.connect()
-    engine.execute("""
-        CREATE TABLE IF NOT EXISTS iris(
-            sepal_length FLOAT NOT NULL,
-            sepal_width FLOAT NOT NULL,
-            pepal_length FLOAT NOT NULL,
-            pepal_width FLOAT NOT NULL,
-            species VARCHAR(100) NOT NULL
-        );"""
-    )
-    data = pd.read_csv('data/iris.csv')
-    print(data)
-    data.to_sql(name='iris', con=engine, schema = 'public', if_exists='replace', index=False)
 
 app = Flask(__name__)
 
@@ -32,8 +13,43 @@ def index():
     db_create()
     return "Hello World!"
 
+@app.route("/test", methods = ['post'])
+def test():
+    {
+        "version": "2.0",
+        "template": {
+            "outputs": [
+                {
+        
+                    "basicCard": {
+                        "title": "공공분양", # basic 카드에 들어갈 제목
+                        "description": "궁금하신 분양유형을 눌러주세요", # 제목 아래에 들어갈 상세 내용
+                        "buttons": [ # basic 카드에 소속된 버튼 
+                            {
+                                "action": "block", # 버튼 1
+                                "label": "일반분양", # 버튼 1 내용
+                                "blockId": "지역 입력용 블록" # 버튼 1에서 연결될 버튼 주소
+                            },
+                            {
+                                "action":  "block", # 버튼 2
+                                "label": "특별분양", # 버튼 2 내용
+                                "blockId": "특별분양 블록" # 버튼 2에서 연결될 버튼 주소
+                            },
+                            {
+                                "action":  "block",# 버튼 3
+                                "label": "우선분양",# 버튼 3내용
+                                "blockId": "우선분양 블록" # 버튼 3에서 연결될 버튼 주소
+                            }   
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+
+
 
 
 if __name__ == "__main__":
-    db_create()
-    app.run()
+    #db_create()
+    app.run(host='0.0.0.0', port=int(args[1]),debug=True)
