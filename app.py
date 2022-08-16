@@ -16,6 +16,9 @@ def index():
 
 @app.route("/test", methods = ['post'])
 def test():
+    body = request.get_json()
+    print(body)
+    print(body['userRequest']['utterance'])
     response = {
         "version": "2.0",
         "template": {
