@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
-from flask import Flask
+from flask import Flask, jsonify, request
+import os,sys, json
 import pandas as pd 
 from sqlalchemy import create_engine, MetaData, Table, Column, Integer, String
 
@@ -10,7 +11,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    db_create()
+    #db_create()
     return "Hello World!"
 
 @app.route("/test", methods = ['post'])
