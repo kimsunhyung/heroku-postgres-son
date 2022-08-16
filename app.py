@@ -15,7 +15,7 @@ def index():
 
 @app.route("/test", methods = ['post'])
 def test():
-    {
+    response = {
         "version": "2.0",
         "template": {
             "outputs": [
@@ -46,6 +46,7 @@ def test():
             ]
         }
     }
+    return jsonify(response)
 
 
 
