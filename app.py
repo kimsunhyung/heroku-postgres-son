@@ -50,7 +50,37 @@ def test():
     return jsonify(response)
 
 
-
+@app.route("/test1", methods = ['post'])
+def test1():
+    response = {
+        "version": "2.0",
+        "template": {
+            "outputs": [
+                {
+        
+                    "basicCard": {
+                        "title": "공공분양 일반공급", # basic 카드에 들어갈 제목
+                        "description": "신청자격 표입니다", # 제목 아래에 들어갈 상세 내용
+                        "thumbnail": {
+                            "imageUrl": "https://t1.kakaocdn.net/openbuilder/sample/lj3JUcmrzC53YIjNDkqbWK.jpg"
+                        },
+                        "profile": {
+                            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4BJ9LU4Ikr_EvZLmijfcjzQKMRCJ2bO3A8SVKNuQ78zu2KOqM",
+                             " nickname": "보물상자"
+                         },
+                        "buttons": [ # basic 카드에 소속된 버튼 
+                            {
+                                "action": "block", # 순위 요건 버튼
+                                "label": "순위 요건", # 순위 요건 버튼
+                                "blockId": "1 순위 요건 블록" # 1순위 블록으로 이동 
+                            },
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+    return jsonify(response)
 
 if __name__ == "__main__":
     #db_create()
