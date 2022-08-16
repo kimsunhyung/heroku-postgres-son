@@ -62,7 +62,7 @@ def test1():
                         "title": "공공분양 일반공급", # basic 카드에 들어갈 제목
                         "description": "신청자격 표입니다", # 제목 아래에 들어갈 상세 내용
                         "thumbnail": {
-                            "imageUrl": "https://github.com/kimsunhyung/heroku-postgres-son/commit/b2423286b35cd0eedeec274f299c6240605a1597/data/test1.png"
+                            "imageUrl": "https://github.com/kimsunhyung/heroku-postgres-son/blob/main/data/test1.png"
                         },
                         "buttons": [ # basic 카드에 소속된 버튼 
                             {
