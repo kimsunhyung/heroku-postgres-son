@@ -32,7 +32,7 @@ def test():
                             {
                                 "action": "block", # 버튼 1
                                 "label": "일반분양", # 버튼 1 내용
-                                "blockId": "4c251d9c4fa2491e9d8075f9a3c421e1" # 버튼 1에서 연결될 버튼 주소
+                                "blockId": "62fb438d70055f434dcd2f9a" # 버튼 1에서 연결될 버튼 주소
                             },
                             {
                                 "action":  "block", # 버튼 2
