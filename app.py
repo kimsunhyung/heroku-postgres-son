@@ -102,7 +102,7 @@ def special():
                                 "title": "",
                                 "description": "",
                                 "thumbnail": {
-                                    "imageUrl": "https://raw.githubusercontent.com/kimsunhyung/heroku-postgres-son/main/data/%EA%B0%84%EB%8B%A8/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C1.PNG",
+                                    "imageUrl": "https://raw.githubusercontent.com/kimsunhyung/heroku-postgres-son/main/data/simple/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C1.PNG",
                                     "fixedRatio" : True,
                                     "width": 800,
                                     "height": 800
@@ -120,7 +120,7 @@ def special():
                                 "title": "",
                                 "description": "",
                                 "thumbnail": {
-                                    "imageUrl": "https://raw.githubusercontent.com/kimsunhyung/heroku-postgres-son/main/data/%EA%B0%84%EB%8B%A8/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C2.PNG",
+                                    "imageUrl": "https://raw.githubusercontent.com/kimsunhyung/heroku-postgres-son/main/data/simple/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C2.PNG",
                                     "width": 800,
                                     "height": 800
                                 },
@@ -136,7 +136,7 @@ def special():
                                 "title": "",
                                 "description": "",
                                 "thumbnail": {
-                                    "imageUrl": "https://raw.githubusercontent.com/kimsunhyung/heroku-postgres-son/main/data/%EA%B0%84%EB%8B%A8/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C3.PNG",
+                                    "imageUrl": "https://raw.githubusercontent.com/kimsunhyung/heroku-postgres-son/main/data/simple/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C3.PNG",
                                     "width": 800,
                                     "height": 800
                                 },
@@ -153,7 +153,7 @@ def special():
                                 "title": "",
                                 "description": "",
                                 "thumbnail": {
-                                    "imageUrl": "https://raw.githubusercontent.com/kimsunhyung/heroku-postgres-son/main/data/%EA%B0%84%EB%8B%A8/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C4.PNG",
+                                    "imageUrl": "https://raw.githubusercontent.com/kimsunhyung/heroku-postgres-son/main/data/simple/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C4.PNG",
                                     "width": 800,
                                     "height": 800
                                 },
@@ -169,7 +169,7 @@ def special():
                                 "title": "",
                                 "description": "",
                                 "thumbnail": {
-                                    "imageUrl": "https://raw.githubusercontent.com/kimsunhyung/heroku-postgres-son/main/data/%EA%B0%84%EB%8B%A8/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C5.PNG",
+                                    "imageUrl": "https://raw.githubusercontent.com/kimsunhyung/heroku-postgres-son/main/data/simple/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C5.PNG",
                                     "width": 800,
                                     "height": 800
                                 },
