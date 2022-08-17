@@ -42,7 +42,7 @@ def public():
                             {
                                 "action":  "block",# 버튼 3
                                 "label": "우선분양",# 버튼 3내용
-                                "blockId": "62fc79c89465de0507b1e0b4" # 버튼 3에서 연결될 버튼 주소
+                                "blockId": "62fca32b8a1240569898c7e3" # 버튼 3에서 연결될 버튼 주소
                             }   
                         ]
                     }
