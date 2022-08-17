@@ -100,7 +100,7 @@ def special():
                     "items": [
                         {
                             "thumbnail": {
-                                "imageUrl": "https://t1.kakaocdn.net/openbuilder/sample/lj3JUcmrzC53YIjNDkqbWK.jpg"
+                                "imageUrl": "https://raw.githubusercontent.com/kimsunhyung/heroku-postgres-son/main/data/%EA%B0%84%EB%8B%A8/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C1.PNG"
                                 "width": 800,
                                 "height": 800
                         },
@@ -108,56 +108,62 @@ def special():
                         {
                             "action": "weblink",
                             "label": "자세히보기",
-                            "webLinkUrl": "짜잔! 우리가 찾던 보물입니다"
+                            "webLinkUrl": "https://easylaw.go.kr/CSP/CnpClsMain.laf?popMenu=ov&csmSeq=873&ccfNo=2&cciNo=4&cnpClsNo=1&search_put="
                         },
-                        {
-                            "action":  "webLink",
-                            "label": "구경하기",
-                            "webLinkUrl": "https://e.kakao.com/t/hello-ryan"
-                        }
                         ]
                         },
                         {
-                            "title": "보물상자2",
-                            "description": "보물상자2 안에는 뭐가 있을까",
                             "thumbnail": {
-                                "imageUrl": "https://t1.kakaocdn.net/openbuilder/sample/lj3JUcmrzC53YIjNDkqbWK.jpg"
+                                "imageUrl": "https://github.com/kimsunhyung/heroku-postgres-son/blob/main/data/%EA%B0%84%EB%8B%A8/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C2.PNG?raw=true"
                         },
                             "buttons": [
                         {
-                            "action": "message",
-                            "label": "열어보기",
-                            "messageText": "짜잔! 우리가 찾던 보물입니다"
+                            "action": "weblink",
+                            "label": "자세히보기",
+                            "webLinkUrl": "https://easylaw.go.kr/CSP/CnpClsMain.laf?popMenu=ov&csmSeq=873&ccfNo=2&cciNo=4&cnpClsNo=2&search_put="
                         },
-                        {
-                            "action":  "webLink",
-                            "label": "구경하기",
-                            "webLinkUrl": "https://e.kakao.com/t/hello-ryan"
-                        }
                         ]
                         },
                         {
-                            "title": "보물상자3",
-                            "description": "보물상자3 안에는 뭐가 있을까",
                             "thumbnail": {
-                                "imageUrl": "https://t1.kakaocdn.net/openbuilder/sample/lj3JUcmrzC53YIjNDkqbWK.jpg"
+                                "imageUrl": "https://github.com/kimsunhyung/heroku-postgres-son/blob/main/data/%EA%B0%84%EB%8B%A8/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C3.PNG?raw=true"
                         },
                             "buttons": [
                         {
-                            "action": "message",
-                            "label": "열어보기",
-                            "messageText": "짜잔! 우리가 찾던 보물입니다"
+                            "action": "weblink",
+                            "label": "자세히보기",
+                            "webLinkUrl": "https://easylaw.go.kr/CSP/CnpClsMain.laf?popMenu=ov&csmSeq=873&ccfNo=2&cciNo=4&cnpClsNo=1&search_put="
+                        },
+                        
+                        ]
                         },
                         {
-                            "action":  "webLink",
-                            "label": "구경하기",
-                            "webLinkUrl": "https://e.kakao.com/t/hello-ryan"
-                        }
-                    ]
-                }
-            ]
+                            "thumbnail": {
+                                "imageUrl": "https://github.com/kimsunhyung/heroku-postgres-son/blob/main/data/%EA%B0%84%EB%8B%A8/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C4.PNG?raw=true"
+                        },
+                            "buttons": [
+                        {
+                            "action": "weblink",
+                            "label": "자세히보기",
+                            "webLinkUrl": "https://easylaw.go.kr/CSP/CnpClsMain.laf?popMenu=ov&csmSeq=873&ccfNo=2&cciNo=4&cnpClsNo=1&search_put="
+                        },
+                        ]
+                        },
+                        {
+                            "thumbnail": {
+                                "imageUrl": "https://github.com/kimsunhyung/heroku-postgres-son/blob/main/data/%EA%B0%84%EB%8B%A8/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C3.PNG?raw=true"
+                        },
+                            "buttons": [
+                        {
+                            "action": "weblink",
+                            "label": "자세히보기",
+                            "webLinkUrl": "https://easylaw.go.kr/CSP/CnpClsMain.laf?popMenu=ov&csmSeq=873&ccfNo=2&cciNo=4&cnpClsNo=1&search_put="
+                        },
+                        ]   
+                    }
+                ]
+            }
         }
-      }
     ]
   }
 }
