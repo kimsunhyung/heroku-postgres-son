@@ -91,8 +91,8 @@ def normal():
 @app.route("/special", methods = ['post'])
 def special():
     body = request.get_json()
-    #print(body)
-    #print(body['userRequest']['block'])
+    print(body)
+    print(body['userRequest']['block'])
     response = {
         "version": "2.0",
         "template": {
@@ -276,8 +276,8 @@ def first():
 @app.route("/level", methods = ['post'])
 def level():
     body = request.get_json()
-    print(body)
-    print(body['userRequest']['block'])
+    #print(body)
+    #print(body['userRequest']['block'])
     response = {
         "version": "2.0",
         "template": {
