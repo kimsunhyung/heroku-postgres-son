@@ -17,8 +17,8 @@ def index():
 @app.route("/public", methods = ['post'])
 def public():
     body = request.get_json()
-    print(body)
-    print(body['userRequest']['utterance'])
+    #print(body)
+    #print(body['userRequest']['utterance'])
     response = {
         "version": "2.0",
         "template": {
@@ -56,8 +56,8 @@ def public():
 @app.route("/normal", methods = ['post'])
 def normal():
     body = request.get_json()
-    print(body)
-    print(body['userRequest']['block'])
+    #print(body)
+    #print(body['userRequest']['block'])
     response = {
         "version": "2.0",
         "template": {
@@ -88,8 +88,8 @@ def normal():
 @app.route("/special", methods = ['post'])
 def special():
     body = request.get_json()
-    print(body)
-    print(body['userRequest']['block'])
+    #print(body)
+    #print(body['userRequest']['block'])
     response = {
         "version": "2.0",
         "template": {
