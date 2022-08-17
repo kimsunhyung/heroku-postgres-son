@@ -115,6 +115,8 @@ def special():
                         {
                             "thumbnail": {
                                 "imageUrl": "https://github.com/kimsunhyung/heroku-postgres-son/blob/main/data/%EA%B0%84%EB%8B%A8/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C2.PNG?raw=true"
+                                "width": 800,
+                                "height": 800
                         },
                             "buttons": [
                         {
@@ -127,6 +129,8 @@ def special():
                         {
                             "thumbnail": {
                                 "imageUrl": "https://github.com/kimsunhyung/heroku-postgres-son/blob/main/data/%EA%B0%84%EB%8B%A8/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C3.PNG?raw=true"
+                                "width": 800,
+                                "height": 800
                         },
                             "buttons": [
                         {
@@ -140,6 +144,8 @@ def special():
                         {
                             "thumbnail": {
                                 "imageUrl": "https://github.com/kimsunhyung/heroku-postgres-son/blob/main/data/%EA%B0%84%EB%8B%A8/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C4.PNG?raw=true"
+                                "width": 800,
+                                "height": 800
                         },
                             "buttons": [
                         {
@@ -151,13 +157,15 @@ def special():
                         },
                         {
                             "thumbnail": {
-                                "imageUrl": "https://github.com/kimsunhyung/heroku-postgres-son/blob/main/data/%EA%B0%84%EB%8B%A8/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C3.PNG?raw=true"
+                                "imageUrl": "https://github.com/kimsunhyung/heroku-postgres-son/blob/main/data/%EA%B0%84%EB%8B%A8/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C5.PNG?raw=true"
+                                "width": 800,
+                                "height": 800
                         },
                             "buttons": [
                         {
                             "action": "weblink",
                             "label": "자세히보기",
-                            "webLinkUrl": "https://easylaw.go.kr/CSP/CnpClsMain.laf?popMenu=ov&csmSeq=873&ccfNo=2&cciNo=4&cnpClsNo=1&search_put="
+                            "webLinkUrl": "https://easylaw.go.kr/CSP/CnpClsMain.laf?popMenu=ov&csmSeq=873&ccfNo=2&cciNo=4&cnpClsNo=2&search_put="
                         },
                         ]   
                     }
@@ -167,6 +175,7 @@ def special():
     ]
   }
 }
+
     return jsonify(response)
 
 if __name__ == "__main__":
