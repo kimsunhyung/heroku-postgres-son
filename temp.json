@@ -1,1 +1,54 @@
-
+{
+   "bot":{
+      "id":"62fb4191fb4d7520b2bbdb75",
+      "name":"청약챗봇"
+   },
+   "intent":{
+      "id":"62fc5f5378a1fc2ba5b29248",
+      "name":"공공 특별공급",
+      "extra":{
+         "reason":{
+            "code":1,
+            "message":"OK"
+         }
+      }
+   },
+   "action":{
+      "id":"62fc5f3cfb4d7520b2bbedcb",
+      "name":"공공 특별공급",
+      "params":{
+         
+      },
+      "detailParams":{
+         
+      },
+      "clientExtra":{
+         
+      }
+   },
+   "userRequest":{
+      "block":{
+         "id":"62fc5f5378a1fc2ba5b29248",
+         "name":"공공 특별공급"
+      },
+      "user":{
+         "id":"bea8e559c27ace03f9b0d45b963486140936ed2e177981b8c226444583fb14be2e",
+         "type":"botUserKey",
+         "properties":{
+            "botUserKey":"bea8e559c27ace03f9b0d45b963486140936ed2e177981b8c226444583fb14be2e",
+            "isFriend":true,
+            "plusfriendUserKey":"C0Qe77g9kNc0",
+            "bot_user_key":"bea8e559c27ace03f9b0d45b963486140936ed2e177981b8c226444583fb14be2e",
+            "plusfriend_user_key":"C0Qe77g9kNc0"
+         }
+      },
+      "utterance":"special",
+      "params":{
+         "surface":"Kakaotalk.plusfriend"
+      },
+      "lang":"ko",
+      "timezone":"Asia/Seoul"
+   },
+   "contexts":[
+      
+   ]

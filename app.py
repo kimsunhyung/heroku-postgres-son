@@ -37,7 +37,7 @@ def public():
                             {
                                 "action":  "block", # 버튼 2
                                 "label": "특별분양", # 버튼 2 내용
-                                "blockId": "특별분양 블록" # 버튼 2에서 연결될 버튼 주소
+                                "blockId": "62fc5f5378a1fc2ba5b29248" # 버튼 2에서 연결될 버튼 주소
                             },
                             {
                                 "action":  "block",# 버튼 3
