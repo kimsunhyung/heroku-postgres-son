@@ -1,0 +1,48 @@
+"intent":{
+    "id":"62fb438d70055f434dcd2f9a",
+    "name":"공공분양 자격요건",
+    "extra":{
+       "reason":{
+          "code":1,
+          "message":"OK"
+       }
+    }
+ },
+ "action":{
+    "id":"62fb435a70055f434dcd2f94",
+    "name":"test2",
+    "params":{
+       
+    },
+    "detailParams":{
+       
+    },
+    "clientExtra":{
+       
+    }
+ },
+ "userRequest":{
+    "block":{
+       "id":"62fb438d70055f434dcd2f9a",
+       "name":"공공분양 자격요건"
+    },
+    "user":{
+       "id":"bef46054196f3efb4dd0987956ed56dae736ed2e177981b8c226444583fb14be2e",
+       "type":"botUserKey",
+       "properties":{
+          "botUserKey":"bef46054196f3efb4dd0987956ed56dae736ed2e177981b8c226444583fb14be2e",
+          "bot_user_key":"bef46054196f3efb4dd0987956ed56dae736ed2e177981b8c226444583fb14be2e"
+       }
+    },
+    "utterance":"일반분양\n",
+    "params":{
+       "surface":"BuilderBotTest",
+       "ignoreMe":"true"
+    },
+    "lang":"kr",
+    "timezone":"Asia/Seoul"
+ },
+ "contexts":[
+    
+ ]
+}

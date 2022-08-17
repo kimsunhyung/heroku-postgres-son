@@ -14,8 +14,8 @@ def index():
     #db_create()
     return "Hello World!"
 
-@app.route("/test", methods = ['post'])
-def test():
+@app.route("/public", methods = ['post'])
+def public():
     body = request.get_json()
     print(body)
     print(body['userRequest']['utterance'])
@@ -53,11 +53,11 @@ def test():
     return jsonify(response)
 
 
-@app.route("/test1", methods = ['post'])
-def test1():
+@app.route("/normal", methods = ['post'])
+def normal():
     body = request.get_json()
     print(body)
-    print(body['userRequest']['utterance'])
+    print(body['userRequest']['block'])
     response = {
         "version": "2.0",
         "template": {
