@@ -273,6 +273,55 @@ def first():
 
     return jsonify(response)
 
+@app.route("/level", methods = ['post'])
+def level():
+    body = request.get_json()
+    print(body)
+    print(body['userRequest']['block'])
+    response = {
+        "version": "2.0",
+        "template": {
+            "outputs": [
+                    {
+                    "carousel": {
+                        "type": "basicCard",
+                        "items": [
+                            {
+                                "title": "1순위 요건입니다.",
+                                "description": "그 외 2순위는 추첨입니다.",
+                                "thumbnail": {
+                                    "imageUrl": "https://raw.githubusercontent.com/kimsunhyung/heroku-postgres-son/5d03ff5ee64210755f0baf97eddf3a259c1245ef/data/simple/1%EC%88%9C%EC%9C%84%20%EC%9A%94%EA%B1%B4.png",
+                                    "fixedRatio" : True,
+                                    "width": 800,
+                                    "height": 800
+                                },
+                            },
+                            {
+                                "title": "",
+                                "description": "동일 순위 시 경쟁 요건표 입니다.",
+                                "thumbnail": {
+                                    "imageUrl": "https://raw.githubusercontent.com/kimsunhyung/heroku-postgres-son/5d03ff5ee64210755f0baf97eddf3a259c1245ef/data/simple/%EB%8F%99%EC%9D%BC%20%EC%88%9C%EC%9C%84%20%EA%B2%BD%EC%9F%81.png",
+                                    "fixedRatio" : True,
+                                    "width": 800,
+                                    "height": 800
+                                },
+                                "buttons": [
+                                    {
+                                        "action": "webLink",
+                                        "label": "자세히보기",
+                                        "webLinkUrl": "https://easylaw.go.kr/CSP/CnpClsMain.laf?popMenu=ov&csmSeq=873&ccfNo=2&cciNo=2&cnpClsNo=2&search_put="
+                                    },
+                                ]
+                            },
+                        ]
+                    }
+                }   
+            ]
+        }
+    }
+
+    return jsonify(response)
+
 if __name__ == "__main__":
     #db_create()
     app.run(host='0.0.0.0', port=int(args[1]),debug=True)
