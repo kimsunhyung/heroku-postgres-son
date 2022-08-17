@@ -77,7 +77,7 @@ def normal():
                             {
                                 "action": "block", # 순위 요건 버튼
                                 "label": "순위 요건", # 순위 요건 버튼
-                                "blockId": "62fc9aa4745ef634f04801fe" # 1순위 블록으로 이동 
+                                "blockId": "62fca2f4745ef634f0480557" # 1순위 블록으로 이동 
                             },
                         ]
                     }
