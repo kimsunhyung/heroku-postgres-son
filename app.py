@@ -110,10 +110,10 @@ def special():
 
                                 "buttons": [
                                     {
-                                        "action": "weblink",
+                                        "action": "webLink",
                                         "label": "자세히보기",
                                         "webLinkUrl": "https://easylaw.go.kr/CSP/CnpClsMain.laf?popMenu=ov&csmSeq=873&ccfNo=2&cciNo=4&cnpClsNo=1&search_put="
-                                    }
+                                    },
                                 ]
                             },
                             {
@@ -126,10 +126,10 @@ def special():
                                 },
                                 "buttons": [
                                     {
-                                        "action": "weblink",
+                                        "action": "webLink",
                                         "label": "자세히보기",
                                         "webLinkUrl": "https://easylaw.go.kr/CSP/CnpClsMain.laf?popMenu=ov&csmSeq=873&ccfNo=2&cciNo=4&cnpClsNo=2&search_put="
-                                    }
+                                    },
                                 ]
                             },
                             {
@@ -142,10 +142,10 @@ def special():
                                 },
                                 "buttons": [
                                     {
-                                        "action": "weblink",
+                                        "action": "webLink",
                                         "label": "자세히보기",
                                         "webLinkUrl": "https://easylaw.go.kr/CSP/CnpClsMain.laf?popMenu=ov&csmSeq=873&ccfNo=2&cciNo=4&cnpClsNo=1&search_put="
-                                    }
+                                    },
                         
                                 ]
                             },
@@ -159,10 +159,10 @@ def special():
                                 },
                                 "buttons": [
                                     {
-                                        "action": "weblink",
+                                        "action": "webLink",
                                         "label": "자세히보기",
                                         "webLinkUrl": "https://easylaw.go.kr/CSP/CnpClsMain.laf?popMenu=ov&csmSeq=873&ccfNo=2&cciNo=4&cnpClsNo=1&search_put="
-                                    }
+                                    },
                                 ]
                             },
                             {
@@ -175,10 +175,10 @@ def special():
                                 },
                                 "buttons": [
                                     {
-                                        "action": "weblink",
+                                        "action": "webLink",
                                         "label": "자세히보기",
                                         "webLinkUrl": "https://easylaw.go.kr/CSP/CnpClsMain.laf?popMenu=ov&csmSeq=873&ccfNo=2&cciNo=4&cnpClsNo=2&search_put="
-                                    }
+                                    },
                                 ]   
                             }
                         ]
