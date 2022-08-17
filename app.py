@@ -68,7 +68,10 @@ def normal():
                         "title": "공공분양 일반공급", # basic 카드에 들어갈 제목
                         "description": "신청자격 표입니다", # 제목 아래에 들어갈 상세 내용
                         "thumbnail": {
-                            "imageUrl": "https://raw.githubusercontent.com/kimsunhyung/heroku-postgres-son/main/data/test1.png"
+                            "imageUrl": "https://raw.githubusercontent.com/kimsunhyung/heroku-postgres-son/5d03ff5ee64210755f0baf97eddf3a259c1245ef/data/simple/%EC%9D%BC%EB%B0%98%EA%B3%B5%EA%B8%89%20%EC%9E%90%EA%B2%A9.png",
+                            "fixedRatio" : True,
+                            "width": 800,
+                            "height": 800
                         },
                         "buttons": [ # basic 카드에 소속된 버튼 
                             {
