@@ -309,7 +309,7 @@ def level():
                                     {
                                         "action": "webLink",
                                         "label": "자세히보기",
-                                        "webLinkUrl": "https://easylaw.go.kr/CSP/CnpClsMain.laf?popMenu=ov&csmSeq=873&ccfNo=2&cciNo=2&cnpClsNo=2&search_put="
+                                        "webLinkUrl": "https://www.law.go.kr/LSW/LsiJoLinkP.do?joNo=002700000&languageType=KO&docType=JO&lsNm=%EC%A3%BC%ED%83%9D%EA%B3%B5%EA%B8%89%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B7%9C%EC%B9%99&paras=1#"
                                     },
                                 ]
                             },
