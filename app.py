@@ -32,7 +32,7 @@ def public():
                             {
                                 "action": "block", # 버튼 1
                                 "label": "일반분양", # 버튼 1 내용
-                                "blockId": "62fb438d70055f434dcd2f9a" # 버튼 1에서 연결될 버튼 주소
+                                "blockId": "62fca29a8a1240569898c7a6" # 버튼 1에서 연결될 버튼 주소
                             },
                             {
                                 "action":  "block", # 버튼 2
@@ -56,8 +56,8 @@ def public():
 @app.route("/normal", methods = ['post'])
 def normal():
     body = request.get_json()
-    print(body)
-    print(body['userRequest']['block'])
+    #print(body)
+    #print(body['userRequest']['block'])
     response = {
         "version": "2.0",
         "template": {
@@ -276,8 +276,8 @@ def first():
 @app.route("/level", methods = ['post'])
 def level():
     body = request.get_json()
-    #print(body)
-    #print(body['userRequest']['block'])
+    print(body)
+    print(body['userRequest']['block'])
     response = {
         "version": "2.0",
         "template": {
