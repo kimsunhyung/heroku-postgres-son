@@ -84,6 +84,85 @@ def normal():
     }
     return jsonify(response)
 
+
+@app.route("/special", methods = ['post'])
+def special():
+    body = request.get_json()
+    print(body)
+    print(body['userRequest']['block'])
+    response = {
+         "version": "2.0",
+         "template": {
+            "outputs": [
+                {
+                 "carousel": {
+                    "type": "basicCard",
+                    "items": [
+                        {
+                            "thumbnail": {
+                                "imageUrl": "https://t1.kakaocdn.net/openbuilder/sample/lj3JUcmrzC53YIjNDkqbWK.jpg"
+                                "width": 800,
+                                "height": 800
+                        },
+                            "buttons": [
+                        {
+                            "action": "weblink",
+                            "label": "자세히보기",
+                            "webLinkUrl": "짜잔! 우리가 찾던 보물입니다"
+                        },
+                        {
+                            "action":  "webLink",
+                            "label": "구경하기",
+                            "webLinkUrl": "https://e.kakao.com/t/hello-ryan"
+                        }
+                        ]
+                        },
+                        {
+                            "title": "보물상자2",
+                            "description": "보물상자2 안에는 뭐가 있을까",
+                            "thumbnail": {
+                                "imageUrl": "https://t1.kakaocdn.net/openbuilder/sample/lj3JUcmrzC53YIjNDkqbWK.jpg"
+                        },
+                            "buttons": [
+                        {
+                            "action": "message",
+                            "label": "열어보기",
+                            "messageText": "짜잔! 우리가 찾던 보물입니다"
+                        },
+                        {
+                            "action":  "webLink",
+                            "label": "구경하기",
+                            "webLinkUrl": "https://e.kakao.com/t/hello-ryan"
+                        }
+                        ]
+                        },
+                        {
+                            "title": "보물상자3",
+                            "description": "보물상자3 안에는 뭐가 있을까",
+                            "thumbnail": {
+                                "imageUrl": "https://t1.kakaocdn.net/openbuilder/sample/lj3JUcmrzC53YIjNDkqbWK.jpg"
+                        },
+                            "buttons": [
+                        {
+                            "action": "message",
+                            "label": "열어보기",
+                            "messageText": "짜잔! 우리가 찾던 보물입니다"
+                        },
+                        {
+                            "action":  "webLink",
+                            "label": "구경하기",
+                            "webLinkUrl": "https://e.kakao.com/t/hello-ryan"
+                        }
+                    ]
+                }
+            ]
+        }
+      }
+    ]
+  }
+}
+    return jsonify(response)
+
 if __name__ == "__main__":
     #db_create()
     app.run(host='0.0.0.0', port=int(args[1]),debug=True)
