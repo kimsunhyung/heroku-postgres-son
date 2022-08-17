@@ -12,7 +12,7 @@ app = Flask(__name__)
 @app.route("/")
 def index():
     #db_create()
-    return "Hello World1111!"
+    return "34"
 
 @app.route("/public", methods = ['post'])
 def public():
@@ -91,8 +91,8 @@ def special():
     print(body)
     print(body['userRequest']['block'])
     response = {
-         "version": "2.0",
-         "template": {
+        "version": "2.0",
+        "template": {
             "outputs": [
                     {
                     "carousel": {
