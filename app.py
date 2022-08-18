@@ -7,8 +7,7 @@ from sqlalchemy import create_engine, MetaData, Table, Column, Integer, String
 ## DB 연결 Local
 
 
-app = Flask(__name__)
-
+## 공공분양
 @app.route("/")
 def index():
     #db_create()
