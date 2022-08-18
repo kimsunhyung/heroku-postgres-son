@@ -3,7 +3,7 @@ from flask import Flask, jsonify, request
 import os,sys, json
 import pandas as pd 
 from sqlalchemy import create_engine, MetaData, Table, Column, Integer, String
-import db.database
+import database
 
 ## DB 연결 Local
 
@@ -13,7 +13,7 @@ import db.database
 @app.route("/")
 def index():
     #db_create()
-    return "38"
+    return "31238"
 
 @app.route("/public", methods = ['post'])
 def public():
