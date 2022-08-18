@@ -17,8 +17,8 @@ def db_create():
         CREATE TABLE IF NOT EXISTS area(
             name TEXT,
             division TEXT,
-            score TEXT,
-            input TEXT,
+            score INT,
+            input INT,
         );"""
     )
     data = pd.read_csv('data/score.csv')
@@ -30,7 +30,7 @@ app = Flask(__name__)
 @app.route("/")
 def index():
     db_create()
-    return "35"
+    return "75"
 
 if __name__ == "__main__":
     db_create()
