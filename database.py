@@ -1,10 +1,8 @@
 # -*- coding: utf-8 -*-
-from flask import Flask, jsonify, request
-import sys
-import json
-import random
+from flask import Flask
 import pandas as pd
-from sqlalchemy import create_engine, MetaData, Table, Column, Integer, String
+from sqlalchemy import create_engine
+import psycopg2
 
 ## DB 연결 Local
 def db_create():

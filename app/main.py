@@ -12,8 +12,8 @@ import db.database
 ## 공공분양
 @app.route("/")
 def index():
-    db_create()
-    return "35"
+    #db_create()
+    return "38"
 
 @app.route("/public", methods = ['post'])
 def public():
@@ -324,5 +324,5 @@ def level():
     return jsonify(response)
 
 if __name__ == "__main__":
-    db_create()
+    #db_create()
     app.run(port=5000)
