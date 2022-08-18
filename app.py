@@ -12,7 +12,7 @@ app = Flask(__name__)
 @app.route("/")
 def index():
     #db_create()
-    return "34"
+    return "35"
 
 @app.route("/public", methods = ['post'])
 def public():
