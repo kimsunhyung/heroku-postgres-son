@@ -17,8 +17,8 @@ def db_create():
         CREATE TABLE IF NOT EXISTS area(
             name TEXT,
             division TEXT,
-            score INT,
-            input INT,
+            score bigint,
+            input bigint,
         );"""
     )
     data = pd.read_csv('data/score.csv')
