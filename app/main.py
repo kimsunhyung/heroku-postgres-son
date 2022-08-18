@@ -7,6 +7,7 @@ from database import db_create
 
 ## DB 연결 Local
 
+app = Flask(__name__)
 
 
 ## 공공분양
