@@ -3,14 +3,16 @@ from flask import Flask, jsonify, request
 import os,sys, json
 import pandas as pd 
 from sqlalchemy import create_engine, MetaData, Table, Column, Integer, String
+import appp from db_create
 
 ## DB 연결 Local
+
 
 
 ## 공공분양
 @app.route("/")
 def index():
-    #db_create()
+    db_create()
     return "35"
 
 @app.route("/public", methods = ['post'])
@@ -322,5 +324,5 @@ def level():
     return jsonify(response)
 
 if __name__ == "__main__":
-    #db_create()
+    db_create()
     app.run(host='0.0.0.0', port=int(args[1]),debug=True)
