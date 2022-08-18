@@ -3,7 +3,7 @@ from flask import Flask, jsonify, request
 import os,sys, json
 import pandas as pd 
 from sqlalchemy import create_engine, MetaData, Table, Column, Integer, String
-import db.database from db_create
+import db.database
 
 ## DB 연결 Local
 
@@ -325,4 +325,4 @@ def level():
 
 if __name__ == "__main__":
     db_create()
-    app.run(host='0.0.0.0', port=int(args[1]),debug=True)
+    app.run(port=5000)
