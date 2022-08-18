@@ -20,10 +20,10 @@ def db_create():
             name TEXT,
             division TEXT,
             location TEXT,
-            notice_date INT,
-            start_day INT,
-            end_day INT,
-            release_date INT,
+            notice_date TEXT,
+            start_day TEXT,
+            end_day TEXT,
+            release_date TEXT,
             rink TEXT
         );"""
     )
@@ -33,3 +33,11 @@ def db_create():
 
 app = Flask(__name__)
 
+@app.route("/")
+def index():
+    db_create()
+    return "35"
+
+if __name__ == "__main__":
+    db_create()
+    app.run(host='0.0.0.0', port=int(args[1]),debug=True)

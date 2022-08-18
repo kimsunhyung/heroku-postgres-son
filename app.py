@@ -3,7 +3,7 @@ from flask import Flask, jsonify, request
 import os,sys, json
 import pandas as pd 
 from sqlalchemy import create_engine, MetaData, Table, Column, Integer, String
-import appp from db_create
+import db.database from db_create
 
 ## DB 연결 Local
 
