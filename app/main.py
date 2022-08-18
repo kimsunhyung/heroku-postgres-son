@@ -13,7 +13,7 @@ app = Flask(__name__)
 ## 공공분양
 @app.route("/")
 def index():
-    #db_create()
+    db_create()
     return "31238"
 
 @app.route("/public", methods = ['post'])
@@ -323,7 +323,3 @@ def level():
     }
 
     return jsonify(response)
-
-if __name__ == "__main__":
-    #db_create()
-    app.run(port=5000)
