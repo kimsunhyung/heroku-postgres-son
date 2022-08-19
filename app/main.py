@@ -10,6 +10,10 @@ from database import db_create
 app = Flask(__name__)
 
 
+# 공고
+
+
+
 ## 공공분양
 @app.route("/")
 def index():
