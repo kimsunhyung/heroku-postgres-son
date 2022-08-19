@@ -2,7 +2,7 @@
 from flask import Flask
 import pandas as pd
 from sqlalchemy import create_engine, MetaData, Table, Column, Integer, String
-import psycopg2
+
 
 ## DB 연결 Local
 def db_create():
@@ -14,11 +14,11 @@ def db_create():
 
     engine.connect()
     engine.execute("""
-        CREATE TABLE IF NOT EXISTS area(
+        CREATE TABLE IF NOT EXISTS score(
             name TEXT,
             division TEXT,
             score float,
-            input float,
+            input float
         );"""
     )
     data = pd.read_csv('data/score.csv')
@@ -34,4 +34,4 @@ def index():
 
 if __name__ == "__main__":
     db_create()
-    app.run()
+    app.run(host='0.0.0.0', port=int(args[1]),debug=True)
