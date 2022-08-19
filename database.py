@@ -4,6 +4,7 @@ import pandas as pd
 from sqlalchemy import create_engine, MetaData, Table, Column, Integer, String
 import psycopg2, csv
 
+app = Flask(__name__)
 ## DB 연결 Local
 def db_create():
     # 로컬
@@ -17,8 +18,8 @@ def db_create():
         CREATE TABLE IF NOT EXISTS score(
             name TEXT,
             division TEXT,
-            score INT,
-            input INT
+            score TEXT,
+            input TEXT
         );"""
     )
     data = pd.read_csv('data/score.csv')
@@ -26,6 +27,7 @@ def db_create():
     data.to_sql(name='score', con=engine, schema = 'public', if_exists='replace', index=False)
 
 
+@app.route("/area")
 def area():
     #접속
     conn =psycopg2.connect(host="postgresql://fednehfmarnquy:9de42f09c90aa11fd93a3cd4a1303c58998e421c913de3d6e5f08cfa7c89d1b5@ec2-54-225-234-165.compute-1.amazonaws.com:5432/dcpdo186cscu8t",
@@ -39,7 +41,7 @@ def area():
 
 
 
-app = Flask(__name__)
+
 
 @app.route("/")
 def index():
