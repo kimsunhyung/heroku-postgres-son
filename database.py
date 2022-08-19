@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from flask import Flask
 import pandas as pd
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, MetaData, Table, Column, Integer, String
 import psycopg2
 
 ## DB 연결 Local
@@ -34,4 +34,4 @@ def index():
 
 if __name__ == "__main__":
     db_create()
-    app.run()
+    app.run(host='0.0.0.0', port=int(args[1]),debug=True)
