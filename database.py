@@ -4,7 +4,7 @@ import pandas as pd
 from sqlalchemy import create_engine, MetaData, Table, Column, Integer, String
 import psycopg2, csv
 
-app = Flask(__name__)
+
 ## DB 연결 Local
 def db_create():
     # 로컬
@@ -27,27 +27,21 @@ def db_create():
     data.to_sql(name='score', con=engine, schema = 'public', if_exists='replace', index=False)
 
 
-@app.route("/area")
+
 def area():
     #접속
-    conn =psycopg2.connect(host="postgresql://fednehfmarnquy:9de42f09c90aa11fd93a3cd4a1303c58998e421c913de3d6e5f08cfa7c89d1b5@ec2-54-225-234-165.compute-1.amazonaws.com:5432/dcpdo186cscu8t",
+    conn_string = psycopg2.connect(host="localhost",
     dbname='area', user='fednehfmarnquy', password= '9de42f09c90aa11fd93a3cd4a1303c58998e421c913de3d6e5f08cfa7c89d1b5')
-
-    cur=conn.cursor()
-    cur.execute('select * from area;')
-    rows = cur.fetchall()
-    print(rows)
+    conn = psycopg2.connect(conn_string)
+    cur = conn.cursor()
+    cur.execute('select * from area where location Like "%loc%";').format(4)
+    result = cur.fetchall()
+    print(result)
+    my_df = pd.DataFrame(result) 
+    area_df = my_df.columns = [desc[0] for desc in cur.description]
     #쿼리(평택)
+    return area_df
+    print(area())
 
-
-
-
-
-@app.route("/")
-def index():
-    db_create()
-    return 'I am sonham'
-
-if __name__ == "__main__":
-    db_create()
-    app.run(host='0.0.0.0', port=int(args[1]),debug=True)
+if __name__ == '__main__':
+    area()
