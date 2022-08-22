@@ -330,7 +330,7 @@ def level():
 @app.route("/hello", methods = ['post'])
 def hello():
     body = request.get_json()
-    (body['userRequest']['params'])
+    loc = body['userRequest']['value']
     print(body)
     return '123'
 
