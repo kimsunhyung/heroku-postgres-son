@@ -332,6 +332,8 @@ def hello():
     body = request.get_json()
     loc = body['action']['detailParams']['sys_location']['value']
     print(body)
+    print(loc)
+    print(type(loc))
     return '123'
 
 
