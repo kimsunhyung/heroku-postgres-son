@@ -282,7 +282,7 @@ def first():
 def level():
     body = request.get_json()
     #print(body)
-    #print(body['userRequest']['block'])
+    #(body['userRequest']['block'])
     response = {
         "version": "2.0",
         "template": {
@@ -329,7 +329,10 @@ def level():
 
 @app.route("/hello", methods = ['post'])
 def hello():
-    print(database.area())
+    body = request.get_json()
+    lc = area_df.loc[location]
+    print(body)
+
     
 
 
