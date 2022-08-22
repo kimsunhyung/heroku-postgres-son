@@ -336,54 +336,55 @@ def hello():
     print(type(loc))
     sell = database.area(loc)
     print(sell)
-    {
-        "version": "2.0",
-        "template": {
-            "outputs": [
-                {
-                    "listCard": {
-                        "header": {
-                            "title": "%s 청약공고입니다.".format(loc)
-                        },
-                    "items": [
-                        {
-                            "title": "%s[0]".format(loc),
-                            "description": "%s['location'][0]".format(loc),
-                            "imageUrl": "http://k.kakaocdn.net/dn/APR96/btqqH7zLanY/kD5mIPX7TdD2NAxgP29cC0/1x1.jpg",
-                            "link": {
-                                "web": "%s[rink][0]".format(loc)
+        {
+            "version": "2.0",
+            "template": {
+                "outputs": [
+                    {
+                        "listCard": {
+                            "header": {
+                                "title": "%s 청약공고입니다.".format(loc)
+                            },
+                        "items": [
+                            {
+                                "title": "%s[0]".format(loc),
+                                "description": "%s['location'][0]".format(loc),
+                                "imageUrl": "http://k.kakaocdn.net/dn/APR96/btqqH7zLanY/kD5mIPX7TdD2NAxgP29cC0/1x1.jpg",
+                                "link": {
+                                    "web": "%s[rink][0]".format(loc)
+                                }
+                            },
+                            {
+                                "title": "%s[1]".format(loc),
+                                "description": "%s['location'][1]".format(loc),
+                                "imageUrl": "http://k.kakaocdn.net/dn/APR96/btqqH7zLanY/kD5mIPX7TdD2NAxgP29cC0/1x1.jpg",
+                                "link": {
+                                    "web": "%s[rink][1]".format(loc)
+                                }
+                            },
+                            {
+                                "title": "%s[2]".format(loc),
+                                "description": "%s['location'][2]".format(loc),
+                                "imageUrl": "http://k.kakaocdn.net/dn/APR96/btqqH7zLanY/kD5mIPX7TdD2NAxgP29cC0/1x1.jpg",
+                                "link": {
+                                    "web": "%s[rink][2]".format(loc)
+                                }
+                            },
+                            ],
+                        "buttons": [
+                            {
+                                "label": "더보기",
+                                "action": "webLink",
+                                "blockId": "62654c249ac8ed78441532de",
+                                "webLinkUrl": "https://www.law.go.kr/LSW/LsiJoLinkP.do?joNo=002700000&languageType=KO&docType=JO&lsNm=%EC%A3%BC%ED%83%9D%EA%B3%B5%EA%B8%89%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B7%9C%EC%B9%99&paras=1#"
                             }
-                        },
-                        {
-                            "title": "%s[1]".format(loc),
-                            "description": "%s['location'][1]".format(loc),
-                            "imageUrl": "http://k.kakaocdn.net/dn/APR96/btqqH7zLanY/kD5mIPX7TdD2NAxgP29cC0/1x1.jpg",
-                            "link": {
-                                "web": "%s[rink][1]".format(loc)
-                            }
-                        },
-                        {
-                            "title": "%s[2]".format(loc),
-                            "description": "%s['location'][2]".format(loc),
-                            "imageUrl": "http://k.kakaocdn.net/dn/APR96/btqqH7zLanY/kD5mIPX7TdD2NAxgP29cC0/1x1.jpg",
-                            "link": {
-                                "web": "%s[rink][2]".format(loc)
-                            }
-                        },
-                        ],
-                    "buttons": [
-                        {
-                            "label": "더보기",
-                            "action": "webLink",
-                            "blockId": "62654c249ac8ed78441532de",
-                            "webLinkUrl": "https://www.law.go.kr/LSW/LsiJoLinkP.do?joNo=002700000&languageType=KO&docType=JO&lsNm=%EC%A3%BC%ED%83%9D%EA%B3%B5%EA%B8%89%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B7%9C%EC%B9%99&paras=1#"
-                        }
-                    ]
+                        ]
+                    }
                 }
-            }
-        ]
+            ]
+        }
     }
-}
+
     return '121s3'
 
 
