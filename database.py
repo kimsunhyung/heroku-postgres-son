@@ -33,7 +33,7 @@ def area(loc):
     conn_string = psycopg2.connect(host="ec2-54-225-234-165.compute-1.amazonaws.com",
     dbname='dcpdo186cscu8t', user='fednehfmarnquy', password= '9de42f09c90aa11fd93a3cd4a1303c58998e421c913de3d6e5f08cfa7c89d1b5')
     cur = conn_string.cursor()
-    cur.execute('select * from area where location like "%{0}%";'.format(loc))
+    cur.execute("select * from public.area where location like '%{0}%';".format(loc))
     result = cur.fetchall()
     print(result)
     my_df = pd.DataFrame(result) 
