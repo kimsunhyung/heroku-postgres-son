@@ -336,7 +336,7 @@ def hello():
     print(type(loc))
     sell = database.area(loc)
     print(sell)
-        {
+    {
             "version": "2.0",
             "template": {
                 "outputs": [
