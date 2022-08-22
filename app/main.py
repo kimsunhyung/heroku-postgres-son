@@ -334,6 +334,8 @@ def hello():
     print(body)
     print(loc)
     print(type(loc))
+    sell = database.area(loc)
+    print(sell)
     return '123'
 
 
