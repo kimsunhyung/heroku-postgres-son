@@ -330,7 +330,6 @@ def level():
 @app.route("/hello", methods = ['post'])
 def hello():
     body = request.get_json()
-    lc = area_df.loc[location]
     print(body)
 
     
