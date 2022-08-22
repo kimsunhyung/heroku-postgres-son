@@ -330,11 +330,11 @@ def level():
 @app.route("/hello", methods = ['post'])
 def hello():
     body = request.get_json()
-    loc = body['action']['detailParams']['sys_location']['value']
+    loc = body['action']['detailParams']['sys_location']['value'] # 들어간 문단만큼의 괄호가 생겨야함
     print(body)
     print(loc)
     print(type(loc))
-    sell = database.area(loc)
+    sell = database.area(loc)# 함수 안에 설정한 변수를 넣어야함
     print(sell)
     {
             "version": "2.0",
@@ -347,7 +347,7 @@ def hello():
                             },
                         "items": [
                             {
-                                "title": "%s[0]".format(loc),
+                                "title": "%s['name'][0]".format(loc),
                                 "description": "%s['location'][0]".format(loc),
                                 "imageUrl": "http://k.kakaocdn.net/dn/APR96/btqqH7zLanY/kD5mIPX7TdD2NAxgP29cC0/1x1.jpg",
                                 "link": {
@@ -355,7 +355,7 @@ def hello():
                                 }
                             },
                             {
-                                "title": "%s[1]".format(loc),
+                                "title": "%s['name'][1]".format(loc),
                                 "description": "%s['location'][1]".format(loc),
                                 "imageUrl": "http://k.kakaocdn.net/dn/APR96/btqqH7zLanY/kD5mIPX7TdD2NAxgP29cC0/1x1.jpg",
                                 "link": {
@@ -363,7 +363,7 @@ def hello():
                                 }
                             },
                             {
-                                "title": "%s[2]".format(loc),
+                                "title": "%s['name'][2]".format(loc),
                                 "description": "%s['location'][2]".format(loc),
                                 "imageUrl": "http://k.kakaocdn.net/dn/APR96/btqqH7zLanY/kD5mIPX7TdD2NAxgP29cC0/1x1.jpg",
                                 "link": {
@@ -386,8 +386,3 @@ def hello():
     }
 
     return '121s3'
-
-
-
-
-
