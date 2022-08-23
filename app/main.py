@@ -340,7 +340,7 @@ def hello():
     a = sell['name']
     b = sell['rink']
     c = sell['location']
-    if len(df1) > 0:
+    if len(sell) > 0:
         response = {
             "version": "2.0",
             "template": {
