@@ -332,7 +332,7 @@ def hello():
 
     body = request.get_json()
     print(body)
-    loc = body['action']['detailParams']['sys_location']['value'] # 들어간 문단만큼의 괄호가 생겨야함
+    loc = body['detailParams']['sys_location']['value'] # 들어간 문단만큼의 괄호가 생겨야함
     print(loc)
     print(type(loc))
     sell = database.area(loc)# 함수 안에 설정한 변수를 넣어야함
