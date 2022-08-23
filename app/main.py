@@ -340,14 +340,14 @@ def hello():
     b = sell['rink']
     c = sell['location']
     response = {
-            "version": "2.0",
-            "template": {
-                "outputs": [
+        "version": "2.0",
+        "template": {
+            "outputs": [
                     {
-                        "listCard": {
-                            "header": {
-                                "title": "청약공고입니다."
-                            },
+                    "listCard": {
+                        "header": {
+                            "title": "청약공고입니다."
+                        },
                         "items": [
                             {
                                 "title": a[0],
@@ -363,7 +363,7 @@ def hello():
                                 "imageUrl": "http://k.kakaocdn.net/dn/APR96/btqqH7zLanY/kD5mIPX7TdD2NAxgP29cC0/1x1.jpg",
                                 "link": {
                                     "web": b[1]
-                                }
+                            }
                             },
                             {
                                 "title": a[2],
@@ -371,7 +371,7 @@ def hello():
                                 "imageUrl": "http://k.kakaocdn.net/dn/APR96/btqqH7zLanY/kD5mIPX7TdD2NAxgP29cC0/1x1.jpg",
                                 "link": {
                                     "web": b[2]
-                                }
+                            }
                             },
                             ],
                         "buttons": [
