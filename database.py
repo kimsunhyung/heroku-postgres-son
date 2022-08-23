@@ -36,9 +36,8 @@ def area(loc):
     cur.execute("select * from public.area where location like '%{0}%';".format(loc))
     result = cur.fetchall()
     print(result)
-    my_df = pd.DataFrame(result) 
-    area_df = my_df.columns = [desc[0] for desc in cur.description]
+    my_df = pd.DataFrame(result, column = ['name', 'division','location','notice_date','start_day','end_day','release_date','rink']) 
     #쿼리(평택)
-    return area_df
+    return my_df
     print(area())
 
