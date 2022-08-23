@@ -327,59 +327,55 @@ def level():
 
     return jsonify(response)
 
+@app.route("/hello", methods = ['post'])
+def hello():
 
-# 지역입력 시 공고 출력
-@app.route('/api/annout', methods=['POST'])
-def location():
-    
-    req = request.get_json()
-    print(req)
-    # 카카오 챗봇에서 보낸 요청값을 body에 저장
-    loc=req['action']['params']['loc']
+    body = request.get_json()
+    loc = body['action']['detailParams']['sys_location']['value'] # 들어간 문단만큼의 괄호가 생겨야함
+    print(body)
     print(loc)
-    # 사용자 발화값 중 입력값을 받기 위해 사용
-    df1=database.area_db(loc)
-    # db_select함수에 loc_li값 입력
-    #print(df1)
-    name=df1['name']
-    print(name)
-    print(type(name))
-    # df1이라는 데이터프레임의 'name'컬럼값을 series형식으로 저장
-    URL = df1['rink']
-    # df1이라는 데이터프레임의 'rink'컬럼값을 series형식으로 저장
+    print(type(loc))
+    sell = database.area(loc)# 함수 안에 설정한 변수를 넣어야함
+    print(sell)
+    a = sell['name']
+    b = sell['rink']
+    c = sell['location']
     if len(df1) > 0:
-        responseBody = {
+        response = {
             "version": "2.0",
             "template": {
                 "outputs": [
-                    {
+                        {
                         "listCard": {
                             "header": {
-                                "title": "공고 내역입니다."
+                                "title": "청약공고입니다."
                             },
                             "items": [
                                 {
-                                    "title": name[0],
+                                    "title": a[0],
+                                    "description": c[0],
                                     "imageUrl": "http://k.kakaocdn.net/dn/APR96/btqqH7zLanY/kD5mIPX7TdD2NAxgP29cC0/1x1.jpg",
                                     "link": {
-                                        "web": URL[0]
-                                    }
-                                },
-                                {
-                                    "title": name[1],
-                                    "imageUrl": "http://k.kakaocdn.net/dn/N4Epz/btqqHCfF5II/a3kMRckYml1NLPEo7nqTmK/1x1.jpg",
-                                    "link": {
-                                        "web": URL[1]
-                                    }
-                                },
-                                {
-                                    "title": name[2],
-                                    "imageUrl": "http://k.kakaocdn.net/dn/bE8AKO/btqqFHI6vDQ/mWZGNbLIOlTv3oVF1gzXKK/1x1.jpg",
-                                    "link": {
-                                        "web": URL[2]
-                                    }
+                                        "web": b[0]
                                 }
-                            ],
+                                },
+                                {
+                                    "title": a[1],
+                                    "description": c[1],
+                                    "imageUrl": "http://k.kakaocdn.net/dn/APR96/btqqH7zLanY/kD5mIPX7TdD2NAxgP29cC0/1x1.jpg",
+                                    "link": {
+                                        "web": b[1]
+                                }
+                                },
+                                {
+                                    "title": a[2],
+                                    "description": c[2],
+                                    "imageUrl": "http://k.kakaocdn.net/dn/APR96/btqqH7zLanY/kD5mIPX7TdD2NAxgP29cC0/1x1.jpg",
+                                    "link": {
+                                        "web": b[2]
+                                }
+                                },
+                                ],
                             "buttons": [
                                 {
                                     "label": "더보기",
@@ -393,7 +389,7 @@ def location():
             }
         }
     else :
-        responseBody = {
+        response = {
             "version": "2.0",
             "template": {
                 "outputs": [
@@ -421,5 +417,4 @@ def location():
         }
 
 
-    
-    return responseBody
+    return jsonify(response)
