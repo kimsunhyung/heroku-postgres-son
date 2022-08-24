@@ -295,7 +295,7 @@ def level():
                                 "title": "1순위 요건입니다.",
                                 "description": "그 외 2순위는 추첨입니다.",
                                 "thumbnail": {
-                                    "imageUrl": "https://raw.githubusercontent.com/kimsunhyung/heroku-postgres-son/main/data/simple/1%EC%88%9C%EC%9C%84%20%EC%9A%94%EA%B1%B4.png",
+                                    "imageUrl": "https://raw.githubusercontent.com/kimsunhyung/heroku-postgres-son/main/data/simple2.png",
                                     "fixedRatio" : True,
                                     "width": 800,
                                     "height": 800
@@ -305,7 +305,7 @@ def level():
                                 "title": "",
                                 "description": "동일 순위 시 경쟁 요건표 입니다.",
                                 "thumbnail": {
-                                    "imageUrl": "https://raw.githubusercontent.com/kimsunhyung/heroku-postgres-son/5d03ff5ee64210755f0baf97eddf3a259c1245ef/data/simple/%EB%8F%99%EC%9D%BC%20%EC%88%9C%EC%9C%84%20%EA%B2%BD%EC%9F%81.png",
+                                    "imageUrl": "https://raw.githubusercontent.com/kimsunhyung/heroku-postgres-son/main/data/%EB%8F%99%EC%9D%BC%EC%88%9C%EC%9C%84%EC%A1%B0%EA%B1%B4.png",
                                     "fixedRatio" : True,
                                     "width": 800,
                                     "height": 800
