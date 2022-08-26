@@ -220,7 +220,7 @@ def first():
                                 "title": "",
                                 "description": "",
                                 "thumbnail": {
-                                    "imageUrl": "https://raw.githubusercontent.com/kimsunhyung/heroku-postgres-son/main/data/simple/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C6.PNG",
+                                    "imageUrl": "https://raw.githubusercontent.com/kimsunhyung/heroku-postgres-son/main/data/image/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C6.PNG",
                                     "fixedRatio" : True,
                                     "width": 800,
                                     "height": 800
@@ -238,7 +238,7 @@ def first():
                                 "title": "",
                                 "description": "",
                                 "thumbnail": {
-                                    "imageUrl": "https://raw.githubusercontent.com/kimsunhyung/heroku-postgres-son/main/data/simple/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C7.PNG",
+                                    "imageUrl": "https://raw.githubusercontent.com/kimsunhyung/heroku-postgres-son/main/data/image/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C7.PNG",
                                     "fixedRatio" : True,
                                     "width": 800,
                                     "height": 800
@@ -255,7 +255,7 @@ def first():
                                 "title": "",
                                 "description": "",
                                 "thumbnail": {
-                                    "imageUrl": "https://raw.githubusercontent.com/kimsunhyung/heroku-postgres-son/main/data/simple/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C8.PNG",
+                                    "imageUrl": "https://raw.githubusercontent.com/kimsunhyung/heroku-postgres-son/main/data/image/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C8.PNG",
                                     "fixedRatio" : True,
                                     "width": 800,
                                     "height": 800
