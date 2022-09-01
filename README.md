@@ -66,10 +66,13 @@
 1. 청약 챗봇 프로젝트
 - 폴더명 : heroku-postgres-son
 - 기간 : 2022년 8월 19일 ~ 2022년 9월 2일
-- 팀명 : 부동산팀
-- 주최기간 : 휴먼교육센터
+- 팀명 : 집값많이올랐조(4명)
 - 사용언어 : Python
-- 작업툴 : vsCode
-- 라이브러리 : Flask, flask-heroku, Flask-SQLAlchemy, gunicorn, jinja2, numpy, pandas, psycopg2 등
+- 사용툴 : VSCode, Kakao I open builder
+- 프레임워크 : Flask
+- DBMS : PostgreSQL
+- 플랫폼 : Heroku
+- 라이브러리 : flask, SQLAlchemy,Pandas,Psycopg2 등등
 - 내용 : 수도권 청약 공고 정보에 대해 편하고 간편하게 얻어낼 수 있도록 하기 위한 프로젝트
 - 결과 : 완료
+- 최종 pdf : 'https://github.com/kimsunhyung/heroku-postgres-son/blob/main/%EC%B5%9C%EC%A2%85%EB%B0%9C%ED%91%9C_PPT.pdf'
